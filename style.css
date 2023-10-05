@@ -1,0 +1,186 @@
+body{
+    font-family: 'Pixelify Sans', sans-serif;
+background-color: #cecbb7;
+color:#e7e4d9 ;
+background-image: url("paper.jpg");
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text {
+width: 100%;
+text-align: left;
+white-space: nowrap;
+overflow: hidden;
+animation: 
+typing 2.5s steps(25),
+cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% { border-color: transparent }
+}
+
+@keyframes typing {
+    from { width: 0}
+}
+
+.berry {
+    height: 110px;
+    width: auto;
+}
+
+
+
+
+
+
+
+
+
+.header {
+    background-color: #344434;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    border: 2px solid #344e41;
+    width: 100%;
+
+    
+
+}
+
+.headertext{
+    color: #344e41;
+display: flex;
+align-items: flex-start;
+font-size: 1.7rem;
+display: flex;
+justify-content: space-around;
+margin-bottom: 50px;
+
+}
+
+.imagecontainer {
+    max-width: 1200px;
+    width: 95%;
+    
+    }
+    .slider-wrapper {
+        position: relative;
+    }
+
+    .slider-wrapper .slide-button {
+        position: absolute;
+        top: 50%;
+        height: 50px;
+        width: 50px;
+        color: #dedbc9;
+        border: none;
+        outline: none;
+        background: #882f1d;
+        font-size: 2.2rem;
+        cursor: pointer;
+        border-radius: 50%;
+        transform: translateY(-50%);
+    }
+
+    .slider-wrapper .slide-button:hover {
+        background: #c2544a;
+    }
+
+    .slider-wrapper .slide-button#prev-slide {
+        left: -20px;
+        display: none;
+
+    }
+
+    .slider-wrapper .slide-button#next-slide {
+        right: -20px;
+        
+    }
+
+
+.slider-wrapper .image-list {
+display: grid;
+gap: 18px;
+font-size: 0;
+margin-bottom: 30px;
+overflow-x: auto;
+scrollbar-width: none;
+grid-template-columns: repeat(10, 1fr);
+
+}
+
+.slider-wrapper .image-list::-webkit-scrollbar {
+    display: none;
+}
+
+
+.slider-wrapper .image-list .image-item{
+width: 325px;
+height: 400px;
+object-fit: cover;
+}
+
+
+.imagecontainer .slider-scrollbar {
+    height: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.slider-scrollbar .scrollbar-track {
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+    position: relative;
+    border-radius: 4px;
+}
+.slider-scrollbar:hover .scrollbar-track{
+height: 4px;
+
+}
+
+
+
+
+.slider-scrollbar .scrollbar-thumb {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background: #883b1d;
+    border-radius: inherit;
+    cursor: grab;
+}
+.slider-scrollbar .scrollbar-thumb:active{
+    cursor: grabbing;
+    height: 8px;
+    top: -2px;
+
+}
+
+.slider-scrollbar .scrollbar-thumb::after {
+content: "";
+position: absolute;
+left: 0;
+right: 0;
+top: -10px;
+bottom: -10px;
+
+}
+
+.image-list {
+    background-color: #344e41;
+    border: 2px solid #344e41;
+}
+
+
+
+
